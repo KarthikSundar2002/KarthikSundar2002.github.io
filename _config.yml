@@ -21,18 +21,22 @@
 title: The Grand Game
 email: karthiksundar30092002@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  If you want to get to know me or talk to me, you are always welcome to DM me on instagram,or
-  you can send me a mail, I read all my mails every sunday and I am sure to reply each
-  and every one of them
+  This blog is an initiative to make myself and my fellow readers pro players in the game of life.
+  I like to cover all aspects of life and my journey in each aspect.
+  This is never-ending journey, so start to love the process than the jouney
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
+permalink: /:categories/:title/
 github_username:  KarthikSundar2002
 instagram_username: karthiksundar2002
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

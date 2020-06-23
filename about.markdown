@@ -5,5 +5,6 @@ permalink: /about/
 ---
 
 Hi! I am Karthik Sundar. Welcome to my website!!
-
-You can contact me on Instagram[@karthiksundar2002](https://www.instagram.com/karthiksundar2002/)    Or you can also email me on karthiksundar30092002@gmail.com
+If you want to get to know me or talk to me, you are always welcome to DM me on instagram,or
+ you can send me a mail, I read all my mails every sunday and I am sure to reply each
+and every one of them
