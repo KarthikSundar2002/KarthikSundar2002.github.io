@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
+  border-top: 1px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
 
@@ -16,7 +16,7 @@
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left;
+  float: none;
 
   &,
   &:visited {
@@ -25,7 +25,7 @@
 }
 
 .site-nav {
-  float: right;
+
   line-height: $base-line-height * $base-font-size * 2.25;
 
   .nav-trigger {
@@ -42,7 +42,7 @@
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
-      margin-right: 20px;
+     margin-right: 20px;
     }
   }
 
