@@ -29,8 +29,16 @@
   border-color: blanchedalmond;
 }
 
-.gcse-search{
-  float: right;
+#search-input{
+  box-shadow:  5px 5px 8px #888888;
+  height: 10px;
+  width: 25%;
+
+}
+
+#results-container{
+  box-shadow: cornflowerblue;
+  box-sizing: border-box;
 }
 
 .site-nav {
@@ -261,4 +269,8 @@
       @include relative-font-size(1.125);
     }
   }
+}
+.post-categories{
+  text-shadow: cornflowerblue;
+  color:cornflowerblue ;
 }
