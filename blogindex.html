@@ -22,10 +22,10 @@ type: tag
     {% endfor %}
       <div class="card w-25">
       <div class="card-body">
-      <a href = {{posts.url}}><img class ="card-img-top" {{imageCode}} >
+      <a href = {{posts.url}}><img class ="card-img-top"{{imageCode}} >
 
-      <a href={{posts.url}} class="btn btn-light stretched-link"><h4 class="card-title">{{posts.title}}</h4> </a>
-      <p class="card-text">{{ posts.description }}</p>
+      <a href={{posts.url}} class="btn btn-white stretched-link">{{posts.title}}</a>
+
       </div>
     </div>
   {%endfor%}
