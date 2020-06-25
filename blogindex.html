@@ -7,14 +7,30 @@ type: tag
 <div class="categories">
 
 {%for cat in site.categories %}
-  <div class= "CatgoriesGroup">
-  <center><h2>{{cat[0]}}</h2></center>
+
+  <h2>{{cat[0]}}</h2>
+  <div class= "card-deck">
   {% for posts in cat[1] %}
-  <ul>
-  <li><a href={{posts.url}}>{{posts.title}} </a></li>
+
+    {% assign images = posts.content | split:"<img " %}
+    {% for image in images %}
+      {% if image contains 'src=' %}
+        {% assign imageCode = image | split: "/>" | first %}
+
+        {% break %}
+      {% endif %}
+    {% endfor %}
+      <div class="card w-25">
+      <div class="card-body">
+      <a href = {{posts.url}}><img class ="card-img-top" {{imageCode}} >
+
+      <a href={{posts.url}} class="btn btn-light stretched-link"><h4 class="card-title">{{posts.title}}</h4> </a>
+      <p class="card-text">{{ posts.description }}</p>
+      </div>
+    </div>
   {%endfor%}
-  </ul>
   </div>
-  {%endfor%}
+
+{%endfor%}
 
 </div>

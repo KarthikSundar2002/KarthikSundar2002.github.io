@@ -25,23 +25,37 @@
 }
 
 .categories{
-  box-shadow: 10px 10px 8px #888888;
+  border-width: thin;
   border-color: blanchedalmond;
+
 }
+.categories
 
 #search-input{
-  box-shadow:  5px 5px 8px #888888;
+  background-color: #DCDFE0;
   height: 10px;
-  width: 25%;
+  width: 50%;
 
 }
 
-#results-container{
-  box-shadow: cornflowerblue;
-  box-sizing: border-box;
+#results{
+  float: inherit;
+  color: blue($color: #000000);
 }
 
-.site-nav {
+#resultsContainer{
+  float: inherit;
+
+}
+#mainsearch{
+  background-color: grey;
+}
+.input-group{
+  float: right;
+  max-width: 100%;
+}
+
+.navme {
 
   line-height: $base-line-height * $base-font-size * 2.25;
 
