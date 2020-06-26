@@ -45,8 +45,8 @@ comments: true
   {% assign minCommonCat = 1 %}
   {% assign maxCounter = 0 %}
   <h5>Also Read</h5>
-  <div class="row">
 
+  <ul>
   {% for post in site.posts %}
     {% assign sametagCount = 0 %}
     {% assign sametag = " " %}
@@ -57,28 +57,19 @@ comments: true
           {% assign sametagCount = sametagCount | plus: 1 %}
           {% capture tagmarkup %} <span class="label label-default">{{cat}}</span>{%endcapture%}
           {% assign sametag = sametag | append: tagmarkup %}
-          {% assign images = post.content | split:" <img " %}
-            {% for image in images %}
-              {% if image contains 'src=' %}
-                {% assign imageCode = image | split: "/>" | first %}
 
-                {% break %}
-              {% endif %}
-            {% endfor %}
         {% endif %}
       {% endif %}
     {% endfor %}
 
     {% if sametagCount >= minCommonCat%}
 
-        <div class="col-3">
-          <div class="card">
-            <div class="card-body">
-              <img class="card-img-top" {{imageCode}}>
-              <a href={{post.url}} class="btn btn-white stretched-link">{{post.title}}</a>
-            </div>
-          </div>
-        </div>
+
+        <li>
+        <a href={{post.url}} class="btn btn-white">{{post.title}}</a>
+        </li>
+
+
 
       {% assign maxCounter = maxCounter | plus: 1 %}
       {% if maxCounter >= maxRelatedPosts %}
@@ -86,8 +77,9 @@ comments: true
       {% endif %}
     {% endif %}
   {% endfor %}
+  </ul>
 </div>
-</div>
+
 </article>
 {% if page.comments %}
   <div id="disqus_thread"></div>
