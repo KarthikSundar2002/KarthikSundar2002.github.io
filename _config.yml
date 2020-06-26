@@ -41,7 +41,7 @@ defaults:
 disqus:
   shortname: gamer-15
 
-export JEKYLL_ENV=production
+export: JEKYLL_ENV=production
 
 # Exclude from processing.
 # The following items will not be processed, by default.
