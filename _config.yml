@@ -38,7 +38,8 @@ defaults:
       path: "assets/images"
     values:
       image: true
-
+disqus:
+  shortname: gamer-15
 
 
 
