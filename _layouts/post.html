@@ -33,11 +33,58 @@ layout: default
       {% endunless %}
     {% endfor %}
   </div>
-
-  <div class="post-content e-content" itemprop="articleBody">
+   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
 
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+<div>
+  {% assign maxRelatedPosts = 4 %}
+  {% assign minCommonCat = 1 %}
+  {% assign maxCounter = 0 %}
+  <h5>Also Read</h5>
+  <div class="row">
+
+  {% for post in site.posts %}
+    {% assign sametagCount = 0 %}
+    {% assign sametag = " " %}
+
+    {% for cat in post.categories %}
+      {% if post.url != page.url %}
+        {% if page.categories contains cat %}
+          {% assign sametagCount = sametagCount | plus: 1 %}
+          {% capture tagmarkup %} <span class="label label-default">{{cat}}</span>{%endcapture%}
+          {% assign sametag = sametag | append: tagmarkup %}
+          {% assign images = post.content | split:" <img " %}
+            {% for image in images %}
+              {% if image contains 'src=' %}
+                {% assign imageCode = image | split: "/>" | first %}
+
+                {% break %}
+              {% endif %}
+            {% endfor %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% if sametagCount >= minCommonCat%}
+
+        <div class="col-3">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top" {{imageCode}}>
+              <a href={{post.url}} class="btn btn-white stretched-link">{{post.title}}</a>
+            </div>
+          </div>
+        </div>
+
+      {% assign maxCounter = maxCounter | plus: 1 %}
+      {% if maxCounter >= maxRelatedPosts %}
+        {% break %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>
+</div>
 </article>
