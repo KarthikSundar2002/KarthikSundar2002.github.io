@@ -19,10 +19,11 @@ title: Health Points
       {% endif %}
     {% endfor %}
 
-        <div class="col-sm-3">
-      <div class="card">
+      <div class="col-sm-3"  style="padding-bottom: 0.5rem ;">
+      <div class="card mr-3" >
+        <a href = {{posts.url}}><img class ="card-img-top"{{imageCode}} alt="Card image cap" >
       <div class="card-body">
-      <a href = {{posts.url}}><img class ="card-img-top"{{imageCode}} >
+
 
       <a href={{posts.url}} class="btn btn-white stretched-link">{{posts.title}}</a>
       </div>
