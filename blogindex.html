@@ -1,14 +1,42 @@
 ---
 layout: home
-title: Walkthrough and Guides
+title: My Journey
 type: tag
 ---
+
+
+Hi! I am Karthik Sundar. Welcome to my website!!
+If you want to get to know me or talk to me, you are always welcome to DM me on instagram,or
+ you can send me a mail, I read all my mails every sunday and I am sure to reply each
+and every one of them
+
+Hi! I am Karthik Sundar. Welcome to my website!!
+If you want to get to know me or talk to me, you are always welcome to DM me on instagram,or
+ you can send me a mail, I read all my mails every sunday and I am sure to reply each
+and every one of them
+
+Hi! I am Karthik Sundar. Welcome to my website!!
+If you want to get to know me or talk to me, you are always welcome to DM me on instagram,or
+ you can send me a mail, I read all my mails every sunday and I am sure to reply each
+and every one of them
+
+Hi! I am Karthik Sundar. Welcome to my website!!
+If you want to get to know me or talk to me, you are always welcome to DM me on instagram,or
+ you can send me a mail, I read all my mails every sunday and I am sure to reply each
+and every one of them
+
+Hi! I am Karthik Sundar. Welcome to my website!!
+If you want to get to know me or talk to me, you are always welcome to DM me on instagram,or
+ you can send me a mail, I read all my mails every sunday and I am sure to reply each
+and every one of them
 
 <div class="categories">
 
 {%for cat in site.categories %}
+  {%  assign maxPosts = 4 %}
+  {%  assign maxPostsCounter = 0 %}
 
-  <h2>{{cat[0]}}</h2>
+  <a href= "/pages/{{cat[0]}}"><h5>{{cat[0]}}</h5></a>
   <div class= "card-deck">
   <div class="row">
   {% for posts in cat[1] %}
@@ -21,6 +49,7 @@ type: tag
         {% break %}
       {% endif %}
     {% endfor %}
+    {% if maxPostsCounter < maxPosts %}
 
         <div class="col-sm-3">
       <div class="card">
@@ -28,9 +57,13 @@ type: tag
       <a href = {{posts.url}}><img class ="card-img-top"{{imageCode}} >
 
       <a href={{posts.url}} class="btn btn-white stretched-link">{{posts.title}}</a>
+      {% assign maxPostsCounter = maxPostsCounter | plus: 1 %}
+
+
       </div>
       </div>
       </div>
+    {% endif %}
 
   {%endfor%}
   </div>
