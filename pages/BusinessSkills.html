@@ -1,11 +1,12 @@
 ---
 layout: home
-title: Passive Skills
+title: Business Skills
 ---
+
 {%for cat in site.categories %}
-{%  if cat[0] == "Passive Skills" %}
-  <h2>{{cat[0]}}</h2>
-  <div class= "card-deck">
+{%  if cat[0] == "Business Skills" %}
+
+  <div class= "card-deck-d-flex">
   <div class="row">
   {% for posts in cat[1] %}
 
@@ -18,7 +19,7 @@ title: Passive Skills
       {% endif %}
     {% endfor %}
 
-        <div class="col-sm-3">
+        <div class="col-sm-3" >
       <div class="card">
       <div class="card-body">
       <a href = {{posts.url}}><img class ="card-img-top"{{imageCode}} >
