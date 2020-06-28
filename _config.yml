@@ -41,7 +41,7 @@ defaults:
       image: true
 disqus:
   shortname: gamer-15
-
+markdown: kramdown
 export: JEKYLL_ENV=production
 
 # Exclude from processing.
