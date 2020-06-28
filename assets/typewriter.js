@@ -7,7 +7,7 @@ function setupTypewriter(t) {
     tag = "",
     writingTag = false,
     tagOpen = false,
-    typeSpeed = 200,
+    typeSpeed = 10,
     tempTypeSpeed = 0;
 
   var type = function () {
@@ -36,7 +36,7 @@ function setupTypewriter(t) {
         tempTypeSpeed = 0;
       }
       else {
-        tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+        tempTypeSpeed = (Math.random() * typeSpeed) + 100;
       }
       t.innerHTML += HTML[cursorPosition];
     }
