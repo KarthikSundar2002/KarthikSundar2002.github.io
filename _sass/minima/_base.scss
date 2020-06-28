@@ -40,6 +40,10 @@ ul, ol, dl, figure,
   margin-bottom: $spacing-unit / 2;
 }
 
+.pre.highlight{
+  background-color: grey;
+}
+
 
 
 /**
@@ -162,6 +166,7 @@ pre {
   overflow-x: auto;
 
   > code {
+
     border: 0;
     padding-right: 0;
     padding-left: 0;
