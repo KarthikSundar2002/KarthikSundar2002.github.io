@@ -11,29 +11,31 @@ comments: true
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
+    <div class="post-categories">
+      {% if post %}
+        {% assign categories = post.categories %}
+      {% else %}
+        {% assign categories = page.categories %}
+      {% endif %}
+
+      {% for category in categories %}
+        <u>
+          Category:</u>
+        <em>{{category}}</em>
+        {% unless forloop.last %}&nbsp;
+        {% endunless %}
+      {% endfor %}
+    </div>
       {%- if page.author -%}
         •
         <span itemprop="author" itemscope itemtype="http://schema.org/Person">
           <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
         </span>
       {%- endif -%}
+
     </p>
   </header>
-  <div class="post-categories">
-    {% if post %}
-      {% assign categories = post.categories %}
-    {% else %}
-      {% assign categories = page.categories %}
-    {% endif %}
 
-    {% for category in categories %}
-      <u>
-        Category:</u>
-      <em>{{category}}</em>
-      {% unless forloop.last %}&nbsp;
-      {% endunless %}
-    {% endfor %}
-  </div>
    <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>

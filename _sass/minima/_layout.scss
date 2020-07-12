@@ -245,6 +245,7 @@
   @include relative-font-size(2.625);
   letter-spacing: -1px;
   line-height: 1;
+  text-align: center;
 
   @include media-query($on-laptop) {
     @include relative-font-size(2.25);
@@ -281,6 +282,7 @@
 .post-categories{
   text-shadow: cornflowerblue;
   color:cornflowerblue ;
+  float: left;
 }
 
 .share-box a {
@@ -351,3 +353,6 @@
     display: inline-block;
 }
 
+.dt-published{
+  float: right;
+}
