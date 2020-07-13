@@ -24,18 +24,32 @@
   }
 }
 
+.HomePageContent{
+  padding: 2%;
+  font-family: "Kalam";
+}
+
+.jumbotron{
+  margin: 0%;
+  padding: 2%;
+}
+
 .categories{
   border-width: thin;
   border-color: blanchedalmond;
 
 }
-.categories
+
 
 #search-input{
   background-color: #DCDFE0;
-  height: 10px;
-  width: 50%;
+  height: 100%;
+  width: 100%;
 
+}
+
+#search-container{
+  margin: 0%;
 }
 
 
@@ -125,7 +139,13 @@
   }
 }
 
+.navbar-brand{
+  font-family: "Luckiest Guy" ;
+}
 
+.nav-link{
+  font-family:"Chewy" ;
+}
 
 /**
  * Site footer

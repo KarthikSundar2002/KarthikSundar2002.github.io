@@ -44,7 +44,9 @@ ul, ol, dl, figure,
   background-color: grey;
 }
 
-
+p,ul,ol,a{
+  font-family: "Kalam";
+}
 
 /**
  * `main` element
@@ -99,6 +101,7 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
+  font-family: "Luckiest Guy";
 }
 
 

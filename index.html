@@ -1,32 +1,53 @@
 ---
-layout: home
-title: Home
+
 ---
 
-<html>
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+
 
 <head>
   <meta charset="utf-8">
-  <title>{{page.title}}</title>
-  <script src="/assets/typewriter.js">
-  </script>
+  {%- include head.html -%}
+  <script src="/assets/typewriter.js"></script>
+
+
 </head>
 
 <body>
-  <p id="typewriter">
-    Hi! Welcome to this blog.I am Karthik, the creator of this site and author of this blog! I am happy that you are here.
+  {%- include header.html -%}
+  <div>
+  <main >
+  <div class="jumbotron">
+    <h1 class="display-4">Hi, Welcome to my blog</h1>
+    <hr>
+    <p id="typewriter">
+    I am Karthik, the creator of this site and author of this blog! I am happy that you are here.
     This blog is an attempt for myself and my readers become pro-players in a game! This game is the longest and the most difficult one!!
-    This blog is a form of research process... I try several things to improve my playstyle, I post all my observations and inferences as
+
+  </p>
+  </div>
+    <p class="HomePageContent">This blog is a form of research process... I try several things to improve my playstyle, I post all my observations and inferences as
     a blog post. I expect my readers to also try them out and give their reviews. You are always welcomed to disagree with
     my opinions and observations but I want to hear your opinions so that there can be further optimization. I expect all discussions here
     to be civil. You can start by going to "Start here" section in the "My Journey" dropdown. If you want to get to know me, read the about me
     section. You can get my contact details in the footer.I understand the value of time so I will ensure that in each blog post you get the appropiate value for the time
     you spend.Enjoy.
-  </p>
+    </p>
+  </main>
+  </div>
 
 
+  {%- include footer.html -%}
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
