@@ -1,11 +1,12 @@
 ---
 layout: home
-title: Style Points
+title: Finance
 ---
-{%for cat in site.categories %}
-{%  if cat[0] == "Style Points" %}
 
-  <div class= "card-deck">
+{%for cat in site.categories %}
+{%  if cat[0] == "Finance" %}
+
+  <div class= "card-deck-d-flex">
   <div class="row">
   {% for posts in cat[1] %}
 
@@ -18,9 +19,9 @@ title: Style Points
       {% endif %}
     {% endfor %}
 
-        <div class="col-sm-3" style="padding-bottom: 0.5rem ;">
+        <div class="col-sm-3" style="padding-bottom: 0.5rem ;" >
       <div class="card mr-3 text-center">
-         <a href = {{posts.url}}><img class ="card-img-top"{{imageCode}} >
+        <a href = {{posts.url}}><img class ="card-img-top"{{imageCode}} >
       <div class="card-body" style="padding: 0.5rem ;">
 
 

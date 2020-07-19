@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: The Grand Game
+title: Endless Experiments
 email: karthiksundar30092002@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This blog is an initiative to make myself and my fellow readers pro players in the game of life.
-  I like to cover all aspects of life and my journey in each aspect.
-  This is never-ending journey, so start to love the process than the jouney
+  This blog is a record of all my experiments to improve myself. I document the whole process so
+  I hope you find this record useful. I conduct experiments in all aspects of life. As one experiment will always lead to another, this is
+  an endless session.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://karthiksundar2002.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:categories/:title/
