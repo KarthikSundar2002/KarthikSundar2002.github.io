@@ -43,6 +43,15 @@ They are
  6.  <b>Style</b>
       - Aim: to make good decisions on how I want to present myself via my clothing and appearance.
 
+### How I plan on doing it?
+
+The basic unit of my blog is a post. An experiment may consists of several posts or may end in a single post, it depends on the scope of the experiment. I plan on writing a post every week. Every post starts with an aim, followed by an story of myself trying to reach an conclusion. If the experiment is quite big for a single post, then the experiment will be separated into smaller ones.
+For some experiments, a background knowledge will be required. In these cases, I will mention them in the prerequisites section. I appreciate all form of discussion and collaboration. You can always approach me in any manner. If you have any suggestions for this blog, please contact me. If you want to suggest or oppose anything in any of my blog posts, you are always welcomed to do so. It would mean a lot if you too try out the experiments and give your feedback.
+
+I got nothing more to say.. I hope you enjoy your time here!
+
+
+
 
 
 
