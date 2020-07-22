@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Foolproof method to form habits
-category: Productivity
+categories: Productivity
+
 ---
 
 <br>
