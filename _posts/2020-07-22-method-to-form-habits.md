@@ -2,7 +2,7 @@
 layout: post
 title: Foolproof method to form habits
 categories: Productivity
-
+permalink: :categories/:title
 ---
 
 <br>
