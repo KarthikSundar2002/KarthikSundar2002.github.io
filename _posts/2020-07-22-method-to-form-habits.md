@@ -1,9 +1,11 @@
 ---
 layout: post
 title: Foolproof method to form habits
+category: Productivity
 ---
-# A Fool-proof Method to form Habits
 
+<br>
+<br>
 ## Goal
 
 To find a system or an sequence of processes which will ensure that I stick to an habit.
@@ -22,7 +24,7 @@ Before diving in, I have to equip myself with all the necessary knowledge needed
 
 
 
-![TheHabitLoop](/assets/images/TheHabitLoop.png)
+![TheHabitLoop](/assets/images/TheHabitLoop1.png)
 
 Habits follows a 4-step cycle. To follow along, let us take the habit of checking our social media messages and feeds
 

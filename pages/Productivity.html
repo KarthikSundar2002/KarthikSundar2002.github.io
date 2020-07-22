@@ -5,7 +5,7 @@ title: Productivity
 {%for cat in site.categories %}
 {%  if cat[0] == "Productivity" %}
 
-  <div class= "card-group">
+  <div class= "card-deck-d-flex">
   <div class="row " >
   {% for posts in cat[1] %}
 
@@ -18,7 +18,7 @@ title: Productivity
       {% endif %}
     {% endfor %}
 
-        <div class="col-sm-3" style="padding-bottom: 0.5rem ;">
+        <div class="col-sm-2" style="padding-bottom: 0.5rem ;">
       <div class="card mr-3 text-center">
         <a href = {{posts.url}}><img class ="card-img-top"{{imageCode}}  alt="Card image cap" >
       <div class="card-body" style="padding: 0.5rem ;">
