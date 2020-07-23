@@ -100,7 +100,7 @@ Starting date: 23-07-2020
 Unit of measurement: One unit equals 2 hours of study
 
 <div class="GoogleCalendar">
-<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;showPrint=0&amp;src=djVpODhxN291aTk3MWpmbDBqcHU5c25ibmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23A79B8E&amp;showCalendars=0&amp;showDate=1&amp;mode=WEEK" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;showPrint=0&amp;src=djVpODhxN291aTk3MWpmbDBqcHU5c25ibmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23A79B8E&amp;showCalendars=0&amp;showDate=1&amp;mode=MONTH" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 </div>
 
 
