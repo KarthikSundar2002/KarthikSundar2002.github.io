@@ -9,6 +9,15 @@
   // Positioning context for the mobile navigation icon
   position: relative;
 }
+.display-4 {
+  text-align: center;
+}
+
+.card {
+  box-shadow:5px 10px 10px -4px  grey;
+
+}
+
 
 .site-title {
   @include relative-font-size(1.625);
