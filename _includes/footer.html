@@ -1,4 +1,4 @@
-<footer class="site-footer h-card">
+<footer class="site-footer h-card bg-dark">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
@@ -14,10 +14,12 @@
             {%- else -%}
               {{ site.title | escape }}
             {%- endif -%}
+          </li>
+          {%- if site.email -%}
+            <li>
+              <a class="u-email" href="mailto:{{ site.email }}" id="email">{{ site.email }}</a>
             </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
+          {%- endif -%}
         </ul>
       </div>
 

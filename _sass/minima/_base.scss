@@ -8,7 +8,12 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-
+u{
+  color: grey;
+}
+i {
+  color: grey;
+}
 
 /**
  * Basic styling
@@ -225,7 +230,7 @@ pre {
     width: 16px;
     height: 16px;
     display: inline-block;
-
+    fill: white;
 
     vertical-align: text-top;
 }

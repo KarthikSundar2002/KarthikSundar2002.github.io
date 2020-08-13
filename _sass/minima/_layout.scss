@@ -12,7 +12,9 @@
 .display-4 {
   text-align: center;
 }
-
+.jumbotron{
+  padding:2rem 1rem 2rem 1rem !important;
+}
 .card {
   box-shadow:5px 10px 10px -4px  grey;
 
@@ -154,7 +156,10 @@
 
 .nav-link{
   font-family:"Patrick Hand" ;
+
 }
+
+
 
 /**
  * Site footer
@@ -162,17 +167,20 @@
 .site-footer {
   border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
+
 }
 
 .footer-heading {
   @include relative-font-size(1.125);
   margin-bottom: $spacing-unit / 2;
+  color: white;
 }
 
 .contact-list,
 .social-media-list {
   list-style: none;
   margin-left: 0;
+  color: white;
 }
 
 .footer-col-wrapper {
@@ -201,6 +209,7 @@
 .footer-col-3 {
   width: -webkit-calc(45% - (#{$spacing-unit} / 2));
   width:         calc(45% - (#{$spacing-unit} / 2));
+  color: white;
 }
 
 @include media-query($on-laptop) {
@@ -223,7 +232,13 @@
     width:         calc(100% - (#{$spacing-unit} / 2));
   }
 }
+#email{
+  color: white;
+}
 
+.username{
+  color: white;
+}
 
 
 /**
