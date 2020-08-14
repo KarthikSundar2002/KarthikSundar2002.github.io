@@ -9,7 +9,8 @@ Here, I would like to answer the most fundamental questions behind every initiat
 
 >  Why am I doing this? <br>
 >  What is this about? <br>
->  How I plan on doing it?
+>  How I plan on doing it?<br>
+>  Am I eligible to do so?
 
 
 ### Why am I doing this?
@@ -18,40 +19,33 @@ There is no grand philosphical idea behind all this. It is rather quite simple.
 I want a system which satisfies the following criteria:
 1. A system to make sure that I constantly challenge myself and improve myself.
 2. A medium through which I can speak my thoughts and help others like me.
-3. This medium or system should give me the freedom to explore and branch out my knowledge.
+3. A medium which allows me to become an expert in a field of my choice.
 
-This blog satisfies all the criteria. This blog will make myself accountable to my readers, which ensures that I always find ways to challenge myself and improve myself. If not, then there won't be any new posts in this blog, which means the readers won't get any more value out of this blog and this works like a visual indicator or a warning sign telling me to change.
+This blog will make myself accountable to my readers. It will make sure that I continue to work towards my goals and not get distracted midway. After all, being accountable to someone is one of the best ways to make sure that you stick to the task. Thus, it satisfies the first criteria.
 
 Obviously, this blog satisfies the second criteria as it exists on the internet and the fact that you are reading this line as of this moment is a proof that it satisfies the second criteria.
 
-This blog is based on the broad concept of self-improvement. Most of the things that people would like to learn will always play a role in self-improvement. Thus this blog can in fact be even a place where I can share every skill I learn and the process of me learning it. I believe this may serve as a roadmap for my readers who wish to learn the same skill. Thus,it also satisfies the third one.
-
-
+To explain how this blog satisfies the third criteria, I need to answer the next question.
 
 ### What is this about?
 
-This blog is an record of all the experiments I conduct to improve myself. For clarity,the broad concept of self-improvement is categorized into six categories.
-They are
- 1.  <b>Health</b>
-      - Aim: to become physically eligible for all kinds of activities and to be healthy
- 2.  <b>Productivity</b>
-      - Aim: to get the most value out of our limited and scarce time
- 3.  <b>SkillSet</b>
-      - Aim: to learn specific skills like Coding,Playing Guitar,Game-development, Pixel-art and so on
- 4.  <b>Social Skills</b>
-      - Aim: to foster good connections and move forward as a community
- 5.  <b>Finance</b>
-      - Aim: to manage my finances and be able to make sound financial decisions
- 6.  <b>Style</b>
-      - Aim: to make good decisions on how I want to present myself via my clothing and appearance.
+This blog is a record of my thoughts, my findings and my experiments to improve myself in four specific niches. The niches are as follows:
+   1. Health and Fitness
+   2. Productivity
+   3. Programming
+   4. Digital Art
+
+The first two niches are chosen to make better use of the two most important resources we have - our body and time.
+The last two niches are the fields in which I wish to become an expert. I hope by now you understand how it satisfies the third criteria.
 
 ### How I plan on doing it?
 
-The basic unit of my blog is a post. An experiment may consists of several posts or may end in a single post, it depends on the scope of the experiment. I plan on writing a post every week. Every post starts with an aim, followed by an story of myself trying to reach an conclusion. If the experiment is quite big for a single post, then the experiment will be separated into smaller ones.
+Before jumping into any experimentation, I will start with acquiring the necessary knowledge. Thus, the first post in any specific topic is going to be a post where I share the knowledge I acquired. This will be followed by a post where I put that knowledge into use. That is the basic structure of this blog.If you want to add or oppose anything in any of my blog posts, you are always welcomed to do so. It would mean a lot if you try out the experiments and give your feedback.
 
-I appreciate all form of discussion and collaboration. You can always approach me in any manner. If you have any suggestions for this blog, please contact me. If you want to suggest or oppose anything in any of my blog posts, you are always welcomed to do so. It would mean a lot if you too try out the experiments and give your feedback.
+### Am I eligible to do so?
+I am not an expert in any of the above niches. I am just an average guy who wants to improve himself. However, the fact that I am a beginner makes me eligible to write this blog. This blog is not a story of how I achieved my goals,instead it is a documentation of me trying to achieve them.
 
-I got nothing more to say.. I hope you enjoy your time here!
+You can always approach me in any manner. If you have any suggestions for this blog, please contact me. I got nothing more to say.. I hope you enjoy your time here!
 
 
 

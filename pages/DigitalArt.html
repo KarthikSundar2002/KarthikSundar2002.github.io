@@ -1,10 +1,9 @@
 ---
 layout: home
-title: Finance
+title: Digital Art
 ---
-
 {%for cat in site.categories %}
-{%  if cat[0] == "Finance" %}
+{%  if cat[0] == "Digital Art" %}
 
   <div class= "card-deck-d-flex">
   <div class="row">
@@ -19,9 +18,9 @@ title: Finance
       {% endif %}
     {% endfor %}
 
-        <div class="col-lg-4" style="padding-bottom: 0.5rem ;" >
+        <div class="col-lg-4" style="padding-bottom: 0.5rem ;">
       <div class="card mr-3 text-center">
-        <a href = {{posts.url}}><img class ="card-img-top"{{imageCode}} >
+         <a href = {{posts.url}}><img class ="card-img-top"{{imageCode}} >
       <div class="card-body" style="padding: 0.5rem ;">
 
 
