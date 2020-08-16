@@ -54,7 +54,7 @@ p,ul,ol,a{
 }
 
 p,ul,ol {
-  font-size: 1.15rem;
+  font-size: 1.20rem;
 }
 /**
  * `main` element
@@ -160,11 +160,16 @@ blockquote {
 }
 
 
+p#typewriter{
+  font-size: 1.25rem;
+  padding-left: 1%;
+  padding-right: 1%;
 
+}
 /**
  * Code formatting
  */
-pre,p#typewriter,
+pre,
 code {
   @include relative-font-size(1);
 
