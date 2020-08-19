@@ -3,49 +3,49 @@ layout: home
 title: Programming
 ---
 <p>I am a beginner in the field of programming. I have seen many resources for starting to learn to code. However, the problem lies after this step.
-  I can't seem to generate ideas for apps, websites, games and so on. If I do get an idea, I am not able to implement it properly. This section is
-  a way, I believe, to address this problem.
+    I can't seem to generate ideas for apps, websites, games and so on. If I do get an idea, I am not able to implement it properly. This section is
+    a way, I believe, to address this problem.
 </p>
 <p>This won't be a complete curriculum on programming because I feel there are already many courses available online
-  which are made by people way better than me. This will be a place, where I share my creation process, starting from the
-  idea generation, design to publishing my product.I will decide the theme, the kind of product (mobile app or game or desktop software),the framework
-  and the programming language I am going to use. I will post them by Monday. Every following night, I will post my progress. Hopefully by the end of
-  the week, I believe I will complete the project.
+    which are made by people way better than me. This will be a place, where I share my creation process, starting from the
+    idea generation, design to publishing my product.I will decide the theme, the kind of product (mobile app or game or desktop software),the framework
+    and the programming language I am going to use. I will post them by Monday. Every following night, I will post my progress. Hopefully by the end of
+    the week, I believe I will complete the project.
 </p>
 <p>You can find all my project files in my github page. If required, I will link to external resources.If you are new to programming, please start by
-  reading the post "How to Start". You are always welcomed to post your suggestions. I am also excited to see your projects, so if you do try them,
-  post a link to your github repo in the comments.</p>
+    reading the post "How to Start". You are always welcomed to post your suggestions. I am also excited to see your projects, so if you do try them,
+    post a link to your github repo in the comments.</p>
 
 <h3>Posts</h3>
 <br>
 {%  if cat[0] == "Programming" %}
 
-  <div class= "card-deck-d-flex">
-  <div class="row">
-  {% for posts in cat[1] %}
+  <div class="card-deck-d-flex">
+    <div class="row">
+      {% for posts in cat[1] %}
 
-    {% assign images = posts.content | split:"<img " %}
-    {% for image in images %}
-      {% if image contains 'src=' %}
-        {% assign imageCode = image | split: "/>" | first %}
+        {% assign images = posts.content | split:"<img " %}
+        {% for image in images %}
+          {% if image contains 'src=' %}
+            {% assign imageCode = image | split: "/>" | first %}
 
-        {% break %}
-      {% endif %}
-    {% endfor %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
 
         <div class="col-lg-4" style="padding-bottom: 0.5rem ;">
-      <div class="card mr-3 text-center">
-        <a href = {{posts.url}}><img class ="card-img-top"{{imageCode}} >
-      <div class="card-body" style="padding: 0.5rem ;">
+          <div class="card mr-3 text-center">
+            <a href={{posts.url}}><img class="card-img-top" {{imageCode}}>
+              <div class="card-body" style="padding: 0.5rem ;">
 
 
-      <a href={{posts.url}} class="btn btn-white stretched-link">{{posts.title}}</a>
-      </div>
-      </div>
-      </div>
+                <a href={{posts.url}} class="btn btn-white stretched-link">{{posts.title}}</a>
+              </div>
+            </div>
+          </div>
 
-  {%endfor%}
-  </div>
-  </div>
-{% endif %}
-{%endfor%}
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
