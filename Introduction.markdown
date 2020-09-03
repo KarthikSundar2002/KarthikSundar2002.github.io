@@ -29,14 +29,14 @@ To explain how this blog satisfies the third criteria, I need to answer the next
 
 ### What is this about?
 
-This blog is a record of my thoughts, my findings and my experiments to improve myself in four specific niches. The niches are as follows:
+This blog is a record of my thoughts, my findings and my experiments to improve myself in four specific niches. The niches are as follows:<b>
    1. Health and Fitness
    2. Productivity
    3. Programming
-   4. Digital Art
+   <b>
 
 The first two niches are chosen to make better use of the two most important resources we have - our body and time.
-The last two niches are the fields in which I wish to become an expert. I hope by now you understand how it satisfies the third criteria.
+Programming is the field in which I wish to become an expert. I hope by now you understand how it satisfies the third criteria.
 
 ### How I plan on doing it?
 

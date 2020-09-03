@@ -22,7 +22,7 @@ title: Endless Experiments
 email: karthiksundar30092002@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This blog is a record of all my thoughts and my experiments to improve myself.As there is always room for improvement, there is no end to it. Thus,
-  this is called Endless Experiments. This blog revolves around Health, Productivity, Programming and Digital Art.
+  this is called Endless Experiments. This blog revolves around Health, Productivity and Programming.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://karthiksundar2002.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
