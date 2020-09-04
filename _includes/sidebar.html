@@ -1,0 +1,59 @@
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input class="sidebar-checkbox" id="sidebar-checkbox" type="checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <div class="sidebar-logo" style=" align: center">
+      <img src="http://www.gravatar.com/avatar/9ac71519bd5c2495e00d732b965910d5"/>
+    </div><br>
+    Karthik Sundar<br>
+    That's me, I love to learn and I am proud to say that I am a geek.<br>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}" href="{{ '/' | absolute_url }}">Home</a>
+
+    {% comment %}
+      The code below dynamically generates a sidebar nav of pages with
+      `layout: page` in the front-matter. See readme for usage.
+    {% endcomment %}
+
+    {% assign pages_list = site.pages | sort:"url" %}
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if node.layout == "page" %}
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    <div class="sidebar-item contact-list">
+      You can find me at<br>
+      <a href="https://instagram.com/karthiksundar2002">
+        <svg class="svg-icon">
+          <use xlink:href="{{ '/public/icons/minima-social-icons.svg#instagram' | relative_url }}"></use>
+        </svg>
+        <span class="username">
+          karthiksundar2002</span>
+      </a>
+      <br>
+
+      <a href="https://github.com/karthiksundar2002">
+        <svg class="svg-icon">
+          <use xlink:href="{{ '/public/icons/minima-social-icons.svg#github' | relative_url }}"></use>
+        </svg>
+        <span class="username">
+          karthiksundar2002</span>
+      </a>
+      <br>
+
+      <a class="u-email" href="mailto:karthiksundar30092002@gmail.com" id="email">karthiksundar30092002@gmail.com</a>
+
+    </div>
+
+  </nav>
+
+
+</div>

@@ -25,7 +25,7 @@ Before diving in, I have to equip myself with all the necessary knowledge needed
 
 
 
-![TheHabitLoop](/assets/images/TheHabitLoop1.png)
+![TheHabitLoop](/public/images/TheHabitLoop1.png)
 
 Habits follows a 4-step cycle. To follow along, let us take the habit of checking our social media messages and feeds
 

@@ -1,90 +1,53 @@
 ---
-
+layout: default
+title: Home
 ---
 
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<div>
+  <h2 class="grand-title">Welcome to my blog</h2>
+  <hr>
+  <p id="typewriter">
+    I am happy that you are here.This blog is a record of all the experiments I conduct to improve myself. This blog revolves around health,productivity and programming.
+    To know more about this blog, you can check Introductions or you can start with any one of my recet posts.
+  </p>
+  <hr>
+</div>
+
+ <h3>
+      Recent Posts
+          </h3>
+          {% assign maxRecentPosts = 4 %}
+          {% assign maxCounter = 0 %}
+
+          <div class="card-deck-d-flex">
+            <div class="row">
+              {% for posts in site.posts %}
+
+                {% assign images = posts.content | split:"<img " %}
+                {% for image in images %}
+                  {% if image contains 'src=' %}
+                    {% assign imageCode = image | split: "/>" | first %}
+
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
+                <div class="col-sm-4" style="padding-bottom: 0.5rem ;">
+                  <div class="card mr-3 text-center">
+                    <a href={{posts.url}}><img class="card-img-top" {{imageCode}}>
+                      <div class="card-body" style="padding: 0.5rem ;">
 
 
+                        <b>
+                          <a href={{posts.url}} class="btn stretched-link ">{{posts.title}}</a>
+                        </b>
+                      </div>
+                    </div>
+                  </div>
+              {% assign maxCounter = maxCounter | plus: 1 %}
+                  {% if maxCounter == maxRecentPosts %}
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
 
-<head>
-  <meta charset="utf-8">
-  {%- include head.html -%}
-  <script src="/assets/typewriter.js"></script>
-
-
-</head>
-
-<body>
-  {%- include header.html -%}
-  <div>
-  <main >
-  <div class="jumbotron">
-    <h1 class="display-4 ">Welcome to my blog</h1>
-    <hr>
-    <p id="typewriter">
-    I am Karthik, the creator of this site and author of this blog. I am happy that you are here.
-    This blog is a record of all the experiments I conduct to improve myself. I hope you find them useful.
-    </p>
-
+ </div>
   </div>
-    <br>
-    <p class="HomePageContent">
-      This blog is an attempt through which I plan to improve myself and help other like-minded people. I strongly believe in the value of time, so I will ensure that in each post, you get the appropriate value.
-      Your opinions are always welcomed here. It is alright if you want to disagree with any of my ideas and thoughts, but if you do so then please
-      put forth your argument with suitable explanation in the comments section. Therefore, there can be further discussions and optimizations. I
-      expect all discussions to be civil.<br>
-      If you want to know more about me, please look in the "About Me" section. If you want to contact me, you can get my contact details in the
-      footer. I read all my mails on Sundays and I am sure to reply to each and every one of them.<br>
-      You can start by going to the Introduction section in the "My Lab" dropdown.
-    </p>
-  </div>
-  <div class="HomePageContent">
-  <h3> Recent Posts </h3>
-  {% assign maxRecentPosts = 4 %}
-  {% assign maxCounter = 0 %}
-
-  <div class= "card-deck-d-flex">
-    <div class="row">
-        {% for posts in site.posts %}
-
-            {% assign images = posts.content | split:"<img " %}
-            {% for image in images %}
-              {% if image contains 'src=' %}
-                {% assign imageCode = image | split: "/>" | first %}
-
-                {% break %}
-              {% endif %}
-            {% endfor %}
-            <div class="col-sm-3" style="padding-bottom: 0.5rem ;" >
-      <div class="card mr-3 text-center">
-        <a href = {{posts.url}}><img class ="card-img-top"{{imageCode}} >
-      <div class="card-body" style="padding: 0.5rem ;">
-
-
-      <b><a href={{posts.url}} class="btn btn-white stretched-link ">{{posts.title}}</a></b>
-      </div>
-      </div>
-      </div>
-      {% assign maxCounter = maxCounter | plus: 1 %}
-      {% if maxCounter == maxRecentPosts %}
-        {% break %}
-      {% endif %}
-        {% endfor %}
-
-    </div>
-  </div>
-  </div>
-</main>
-  {%- include footer.html -%}
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-</body>
-
-</html>

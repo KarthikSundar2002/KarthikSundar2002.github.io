@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="en-us">
 
-  {%- include head.html -%}
+  {% include head.html %}
 
   <body>
 
-    {%- include header.html -%}
+    {% include sidebar.html %}
 
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h1 class="masthead-title">
+            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+            <small>{{ site.tagline }}</small>
+          </h1>
+        </div>
+      </div>
 
-    <main aria-label="Content" class="page-content">
-      <div class="wrapper">
+      <div class="container content">
         {{ content }}
       </div>
-    </main>
+    </div>
 
-    {%- include footer.html -%}
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <label class="sidebar-toggle" for="sidebar-checkbox"></label>
 
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src='{{ site.baseurl }}/public/js/script.js'></script>
   </body>
-
 </html>
