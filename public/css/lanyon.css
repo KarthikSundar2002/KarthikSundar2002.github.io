@@ -45,7 +45,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Merienda";
-  font-weight: 400;
+  font-weight: 700;
   color: #313131;
   letter-spacing: -.025rem;
 }
@@ -162,14 +162,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Sidebar content */
+.username{
+  font-family: "Montserrat";
+  color: grey;
+}
+
 .sidebar a {
   font-weight: normal;
   color: #fff;
   font-family: 'Merienda';
+  font-weight: 400;
 }
-.sidebar-item {
+
+
+.sidebar-item{
   padding: 1.5rem;
-  font-family: 'Merienda';
+  font-family: 'Montserrat';
+  font-weight: 400;
 }
 .sidebar-item p:last-child {
   margin-bottom: 0;
@@ -268,10 +277,11 @@ a.sidebar-nav-item:focus {
 }
 
 .svg-icon {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     display: inline-block;
-    fill: white;
+    fill: grey;
+    padding: 0.1rem;
 
     vertical-align: text-top;
 }
