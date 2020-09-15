@@ -38,13 +38,13 @@
 html,
 body {
   overflow-x: hidden;
-  font-family: "Lora" !important
+  font-family: "Montserrat" !important
 }
 
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Alegreya";
+  font-family: "Merienda";
   font-weight: 400;
   color: #313131;
   letter-spacing: -.025rem;
@@ -152,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Lora";
   font-size: .850rem;
   color: rgba(255,255,255,.6);
-  background-color: #202020;
+  background-color: #1a1919;
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
 }
@@ -166,9 +166,11 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar a {
   font-weight: normal;
   color: #fff;
+  font-family: 'Merienda';
 }
 .sidebar-item {
   padding: 1.5rem;
+  font-family: 'Merienda';
 }
 .sidebar-item p:last-child {
   margin-bottom: 0;
@@ -457,6 +459,23 @@ a.pagination-item:hover {
  * Based on colors from Base16: http://chriskempson.github.io/base16/#default.
  */
 
+/* My Theme */
+.theme-base-K1 .sidebar,
+.theme-base-K1 .sidebar-toggle:active,
+.theme-base-K1 #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #042989;
+}
+.theme-base-K1 .container a,
+.theme-base-K1 .sidebar-toggle,
+.theme-base-K1 .related-posts li a:hover {
+  color: #044C92;
+}
+.theme-base-K1 .container h1 h2 h3 p  ,
+.theme-base-K1 .grand-title {
+  color: #044C92;
+}
+
+
 /* Red */
 .theme-base-08 .sidebar,
 .theme-base-08 .sidebar-toggle:active,
@@ -468,6 +487,11 @@ a.pagination-item:hover {
 .theme-base-08 .related-posts li a:hover {
   color: #ac4142;
 }
+.theme-base-08 h1 h2 h3 {
+  color: #ac4142;
+}
+
+
 
 /* Orange */
 .theme-base-09 .sidebar,
