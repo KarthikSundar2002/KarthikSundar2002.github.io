@@ -71,18 +71,17 @@ h1, h2, h3, h4, h5, h6 {
  * Center the page content.
  */
 
-.container {
-  max-width: 52rem;
-}
+
+
 @media (min-width: 38em) {
   .container {
-    max-width: 36rem;
+    max-width: 35rem;
   }
 }
 @media (min-width: 56em) {
   .container {
-    max-width: 52rem;
-  }
+    max-width: 50rem;
+
 }
 
 
