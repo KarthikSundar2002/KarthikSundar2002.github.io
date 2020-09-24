@@ -167,10 +167,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   color: #fff;
   font-family: "Merienda";
+  text-align: center;
 }
 .sidebar-item {
   padding: 1.5rem;
   font-family: 'Montserrat';
+  text-align: center;
 }
 .sidebar-item p:last-child {
   margin-bottom: 0;
@@ -269,12 +271,19 @@ a.sidebar-nav-item:focus {
 }
 
 .svg-icon {
-    width: 16px;
-    height: 16px;
+    margin: 4px;
+
+    width: 28px;
+    height: 28px;
     display: inline-block;
     fill: white;
 
     vertical-align: text-top;
+}
+
+.contacts{
+  align-items: center;
+  text-align: center;
 }
 /* Slide effect
  *
