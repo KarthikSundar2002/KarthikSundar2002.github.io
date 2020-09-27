@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Foolproof method to form habits
-categories: Productivity
+categories: Competitive Programming
 permalink: :categories/:title
 comments: true
 ---

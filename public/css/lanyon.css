@@ -384,6 +384,10 @@ a.sidebar-nav-item:focus {
   text-align: center;
 }
 
+.card-title{
+  text-align: center;
+  font-family: "Merienda";
+}
 /*
  * Pagination
  *
