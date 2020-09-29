@@ -5,11 +5,11 @@ categories: Learning Resources
 permalink: /:title
 comments: true
 ---
+![C Programming]({{"/public/images/2542771_af5d_4.jpg" | relative_url}})
 
 I stumbled upon programming through Game Development. From there, I went to learn the basics of HTML and CSS, the basics of python. During this time, I have always stayed away from C and C++. They have a steep learning curve, and to be realistic, you don’t use C or C++ to develop apps,games or websites.  I was able to make some games and websites but **I have always felt like my knowledge was shallow**.
 
 ## Why C
-
 C and C++ can be called “The Mother of all other Programming Languages ”. All the modern languages are written in C and C++. I have “heard” (I am not 100% sure, because I have not personally learnt any computer-related theory, but I have heard from reliable sources so I am around 98% sure), it will help in learning the fundamental theories of computer science. If you want to know more about, you can find it [here](https://www.topcoder.com/5-reasons-keep-learning-c/).
 
 ### C or C++
