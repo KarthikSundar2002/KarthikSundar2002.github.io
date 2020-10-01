@@ -3,7 +3,7 @@ title:               Koder's Diary
 tagline:             "Thoughts and journey of a coder"
 description:         'This blog is a record of all my thoughts and my experiments to improve myself. As there is always room for improvement, there is no end to it. Thus,
   this is called Endless Experiments. This blog revolves around Health, Productivity and Programming.'
-url:
+url:                 "https://kodersdiary.com"
 baseurl:             ''
 
 permalink:           pretty
