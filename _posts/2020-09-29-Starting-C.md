@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Starting C
-categories: Learning Resources
+description: How to start Learning C?
+keywords: C,Programming,Coding
+categories: Learning-Resources
 permalink: /:title
 comments: true
 ---

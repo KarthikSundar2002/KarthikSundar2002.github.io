@@ -12,10 +12,10 @@ layout: default
     {% else %}
       {% assign categories = page.categories %}
     {% endif %}
-
-    {% for category in categories %}
-      <u>
+    <u>
         Category:</u>
+    {% for category in categories %}
+
       <i>{{category}}</i>,
       {% unless forloop.last %}&nbsp;
       {% endunless %}

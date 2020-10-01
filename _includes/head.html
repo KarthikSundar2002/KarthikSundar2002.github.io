@@ -4,7 +4,7 @@
   <meta content="text/html; charset=utf-8" http-equiv="content-type">
 
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport">
-
+  {% seo %}
   <title>
     {% if page.title == "Home" %}
       {{ site.title }}
@@ -16,6 +16,13 @@
       {{ site.title }}
     {% endif %}
   </title>
+
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  {% if page.keywords %}
+    <meta name="keywords" content="{{ page.keywords }}"/>
+  {% else %}
+    <meta content="your-default-comma-separated-keywords" name="keywords"/>
+  {% endif %}
 
   {% if page.url and site.baseurl %}
     <link rel="canonical" href="{{ page.url | absolute_url }}">
