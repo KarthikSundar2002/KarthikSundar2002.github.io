@@ -3,11 +3,11 @@ layout: post
 title: Starting C
 description: How to start Learning C?
 keywords: C,Programming,Coding
-categories: Learning-Resources
+categories: Resources
 permalink: /:title
 comments: true
 ---
-![C Programming]({{"/public/images/2542771_af5d_4.jpg" | relative_url}})
+![C Programming]({{"/public/images/C-Programming.jpg" | relative_url}})
 
 I stumbled upon programming through Game Development. From there, I went to learn the basics of HTML and CSS, the basics of python. During this time, I have always stayed away from C and C++. They have a steep learning curve, and to be realistic, you don’t use C or C++ to develop apps,games or websites.  I was able to make some games and websites but **I have always felt like my knowledge was shallow**.
 
