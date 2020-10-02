@@ -7,7 +7,7 @@ categories: Resources
 permalink: /:title
 comments: true
 ---
-(Disclaimer: I am not an expert, I am also a newbie. The following what I learnt in the process of starting it.)
+(Disclaimer: I am not an expert, I am also a newbie. The following is what I learnt in the process of starting it.)
 
 ### What is Competitive Programming
 
