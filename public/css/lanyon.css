@@ -388,6 +388,11 @@ a.sidebar-nav-item:focus {
   text-align: center;
   font-family: "Merienda";
 }
+
+.btn{
+  text-align: center;
+  font-family: "Merienda";
+}
 /*
  * Pagination
  *
