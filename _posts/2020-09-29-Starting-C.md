@@ -28,7 +28,7 @@ There are much more, however as a beginner I was not able to understand them com
 
 I have looked at several resources but I enjoyed learning from this: [C Programming Tutorial](https://www.cprogramming.com/tutorial/c-tutorial.html?inl=nv)  (!Kudos to the creator for keeping such a polished course free).
 
-Note: It is not necessary for you to read the whole thing before you start to code. It is better if you code and practice along the way. A good form of practice is Competitive Programming. More about that in the next post.
+Note: It is not necessary for you to read the whole thing before you start to code. It is better if you code and practice along the way. A good form of practice is Competitive Programming. If want to know about how to start Competitive Programming, you can find it [here](https://kodersdiary.com/Starting-Competitive-Programming).
 
 
 
