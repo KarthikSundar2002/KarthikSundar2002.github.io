@@ -12,42 +12,35 @@ title: Home
   </p>
   <hr>
 </div>
+Excited to say about the Upcoming Series: <b>Under the Hood</b>. To learn more about the series,check the [Introduction]() page of the series.
+<h3>Recent Posts</h3>
+{% assign maxRecentPosts = 4 %}
+{% assign maxCounter = 0 %}
 
- <h3>
-      Recent Posts
-          </h3>
-          {% assign maxRecentPosts = 4 %}
-          {% assign maxCounter = 0 %}
-
-          <div class="card-deck-d-flex">
-            <div class="row">
-              {% for posts in site.posts %}
-
-                {% assign images = posts.content | split:"<img " %}
-                {% for image in images %}
-                  {% if image contains 'src=' %}
-                    {% assign imageCode = image | split: "/>" | first %}
-
-                    {% break %}
-                  {% endif %}
-                {% endfor %}
-                <div class="col-sm-4" style="padding-bottom: 0.5rem ;">
-                  <div class="card mr-3 text-center">
-                    <a href={{posts.url}}><img class="card-img-top" {{imageCode}}>
-                      <div class="card-body" style="padding: 0.5rem ;">
-
-
-
-                          <a href={{posts.url}} class="btn stretched-link card-title">{{posts.title}}</a>
-
-                      </div>
-                    </div>
-                  </div>
-              {% assign maxCounter = maxCounter | plus: 1 %}
-                  {% if maxCounter == maxRecentPosts %}
-                    {% break %}
-                  {% endif %}
-                {% endfor %}
-
+<div class="card-deck-d-flex">
+  <div class="row">
+    {% for posts in site.posts %}
+      {% if posts.title != "Introduction" %}
+          {% assign images = posts.content | split:"<img " %}
+          {% for image in images %}
+            {% if image contains 'src=' %}
+              {% assign imageCode = image | split: "/>" | first %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          <div class="col-sm-4" style="padding-bottom: 0.5rem ;">
+            <div class="card mr-3 text-center">
+              <a href={{posts.url}}><img class="card-img-top" {{imageCode}}>
+              <div class="card-body" style="padding: 0.5rem ;">
+                <a href={{posts.url}} class="btn stretched-link card-title">{{posts.title}}</a>
+              </div>
+            </div>
+          </div>
+          {% assign maxCounter = maxCounter | plus: 1 %}
+          {% if maxCounter == maxRecentPosts %}
+            {% break %}
+          {% endif %}
+        {% endif %}
+    {% endfor %}
  </div>
   </div>
