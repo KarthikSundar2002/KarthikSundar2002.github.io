@@ -1,0 +1,50 @@
+---
+layout: page
+title: Under The Hood
+---
+<div>
+  <p>
+    We have come a long way since the start of Computers. Our predecessors have made our lives a lot more simpler by abstracting the essence of the underlying workings of the computers in the form of
+      programming languages such as C , C++ , Java and etc. This Abstraction is a blessing, when the things go as expected,but if things go off the track,  then a good understanding of the underlying processes is a must.
+                This series hopes to achieve that. It may takes months to complete the series, but I feel it's worth it.
+
+                Enjoy!!
+  </p>
+  <hr>
+</div>
+<div>
+  {%for cat in site.categories %}
+{%  if cat[0] == "Under The Hood" %}
+
+  <hr>
+  <div class= "card-deck-d-flex">
+  <div class="row " >
+  {% for posts in cat[1] %}
+
+    {% assign images = posts.content | split:"<img " %}
+    {% for image in images %}
+      {% if image contains 'src=' %}
+        {% assign imageCode = image | split: "/>" | first %}
+
+        {% break %}
+      {% endif %}
+    {% endfor %}
+
+        <div class="col-lg-4" style="padding-bottom: 0.5rem ;">
+      <div class="card mr-3  text-center">
+        <a href = {{posts.url}}><img class ="card-img-top"{{imageCode}}  alt="Card image cap" >
+      <div class="card-body" style="padding: 0.5rem ;">
+
+
+      <a href={{posts.url}} class="btn btn-white stretched-link">{{posts.title}}</a>
+      </div>
+      </div>
+      </div>
+
+  {%endfor%}
+  </div>
+  </div>
+{% endif %}
+
+{%endfor%}
+</div>
