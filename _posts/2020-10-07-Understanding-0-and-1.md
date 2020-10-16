@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Understanding 0 and 1
-description: Binary and operations of bits
+description: Binary numbers
 keywords: Binary,Bitwise,1,0,Computing
 categories: [Under The Hood]
 permalink: /:title
