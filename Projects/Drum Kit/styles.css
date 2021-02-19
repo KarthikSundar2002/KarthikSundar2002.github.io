@@ -11,10 +11,19 @@ h1 {
   text-shadow: 3px 0 #29648a;
 
 }
+wrapper{
+  text-align: center;
+  
+}
+
+a{
+  color: #DBEDF3;
+}
 
 footer {
+  margin: 5%;
   color: #DBEDF3;
-  font-family: sans-serif;
+  font-family: "Arvo",cursive;
 }
 
 .w {
